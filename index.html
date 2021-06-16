@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!---Meta--->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="En está página hay muchas herramientas que quizás quieras hacer">
+	<!---Logo página--->
+	<link rel="shortcut icon" href="https://i.ibb.co/DQDSWYD/icono-king.png">
+	<!---Fuentes--->
+		<!---Fuente 1--->
+	<!---Título página--->
+	<title>¿Cómo se hace?</title>
+	<!---Estilos--->
+	<style>
+		
+	::-webkit-scrollbar
+		{
+	 	display: none;
+		}
+	body
+		{
+		font-family: Arial, Helvetica, sans-serif;
+		margin: 0;
+		}
+
+	.encabezado
+		{
+		padding: 80px;
+		text-align: center;
+		background: rgb(50, 209, 124);
+		color: white;
+		}
+
+		/*Tamaño del título del encabezado*/
+		.encabezado h1
+			{
+			font-size: 40px;
+			}
+
+	.acordion
+		{
+		position: -webkit-sticky;
+		position: sticky;
+		top: 0;		
+		background-color: black;
+		color: white;
+		cursor: pointer;
+		padding: 18px;
+		width: 100%;
+		border: none;
+		text-align: left;
+		outline: none;
+		font-size: 20px;
+		transition: 0.4s;
+		border: 3px solid rgb(50, 209, 124);
+		}
+
+		.active, .acordion:hover
+			{
+			background-color: white;
+			color: black;
+			}
+
+	.acordion-in
+		{
+		background-color: rgb(23, 23, 82);
+		color: white;
+		cursor: pointer;
+		padding: 18px;
+		width: 100%;
+		border: none;
+		text-align: center;
+		outline: none;
+		font-size: 20px;
+		transition: 0.4s;
+		border: 2px solid rgb(50, 209, 124);
+		}
+
+		.active, .acordion-in:hover
+			{
+			background-color: white;
+			color: black;
+			}
+
+	.panel
+		{
+		padding: 0 18px;
+		display: none;
+		background-color: rgb(23, 23, 82);
+		}
+		
+	.panel-in
+		{
+		padding: 0 2px;
+		display: none;
+		background-color: rgb(50, 209, 124);
+		}		
+
+	.clases
+		{
+		overflow: hidden;
+		background-color: rgb(23, 23, 82);
+		}
+		.clases a
+			{
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 20px;
+			font-size: 20px;
+			text-decoration: none;
+			}
+		.clases a:hover
+			{
+			background-color: white;
+			color: black;
+			}
+
+	.clases-in a
+		{
+		display: block;
+		color: rgb(50, 209, 124);
+		text-align: center;
+		padding: 14px 20px;
+		font-size: 20px;
+		text-decoration: none;
+		background-color: rgb(23, 23, 82);
+		}
+	.clases-in a:hover
+		{
+		background-color: rgb(50, 209, 124);
+		color: black;
+		}
+
+	.barra
+		{
+		position: fixed;
+		bottom: 0px;
+		right: 0px;
+		width: 211px;
+		border-radius: 40px;
+		background-color: rgb(23, 23, 82);
+		border: 3px solid white;
+		}
+		.barra a
+			{
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 20px;
+			font-size: 20px;
+			text-decoration: none;
+			}
+		.barra a:hover
+			{
+			background-color: white;
+			color: black;
+			}
+	</style>
+</head>
+<body>
+	<!---Encabezado--->
+		<div class="encabezado">
+		<h1>¿Cómo se hace?</h1>
+		<p>Herramientas y códigos hechos para ayudar al programador</p>
+		</div>
+	<!---Menus--->
+		<button id="Menus" class="acordion">Menus</button>
+			<div class="panel">
+				<div class="clases">
+				  <a href="#">Name</a>
+				</div>
+			</div>
+	<!---Images--->
+		<button id="Images" class="acordion"><u>Images</u></button>
+			<div class="panel">
+				<div class="clases">
+				  <a href="https://replit.com/@KingPacaya/Slideshow#index.html" target="_blank">Slideshow</a>
+				  <a href="https://replit.com/@KingPacaya/Slideshow-Gallery#index.html" target="_blank">Slideshow Gallery</a>
+				  <a href="https://replit.com/@KingPacaya/Modal-Images#index.html" target="_blank">Modal Images</a>
+				  <a href="https://replit.com/@KingPacaya/Lightbox#index.html" target="_blank">Lightbox</a>
+				  <a href="https://replit.com/@KingPacaya/Responsive-Image-Grid#index.html" target="_blank">Responsive Image Grid</a>
+				  <a href="https://replit.com/@KingPacaya/Image-Grid#index.html" target="_blank">Image Grid</a>
+				  <a href="https://replit.com/@KingPacaya/Tab-Gallery#index.html" target="_blank">Tab Gallery</a>
+
+				<button class="acordion-in">Image Hover Overlay</button>
+					<div class="panel-in">
+						<div class="clases-in">
+						  <a href="https://replit.com/@KingPacaya/Fade-in-text#index.html" target="_blank">Fade in text</a>
+						  <a href="https://replit.com/@KingPacaya/Fade-in-a-box#index.html" target="_blank">Fade in a box</a>
+						</div>
+					</div>
+
+				<button class="acordion-in">Image Overlay Slide</button>
+					<div class="panel-in">
+						<div class="clases-in">
+						  <a href="https://replit.com/@KingPacaya/Slide-in-top#index.html" target="_blank">Slide in (top)</a>
+						  <a href="https://replit.com/@KingPacaya/Slide-in-bottom#index.html" target="_blank">Slide in (bottom)</a>
+						</div>
+					</div>
+
+				  <a href="https://replit.com/@KingPacaya/Image-Overlay-Zoom#index.html" target="_blank">Image Overlay Zoom</a>
+				  <a href="https://replit.com/@KingPacaya/Image-Overlay-Title#index.html" target="_blank">Image Overlay Title</a>
+				  <a href="https://replit.com/@KingPacaya/Image-Overlay-Icon#index.html" target="_blank">Image Overlay Icon</a>
+				  <a href="https://replit.com/@KingPacaya/Add-Image-Effects#index.html" target="_blank">Add Image Effects</a>
+				  <a href="https://replit.com/@KingPacaya/Text-Blocks-Over-Image#index.html" target="_blank">Text Blocks Over Image</a>
+				  <a href="https://replit.com/@KingPacaya/Image-with-Transparent-Text#index.html" target="_blank">Image with Transparent Text</a>
+
+				<button class="acordion-in">Full Page Image</button>
+						<div class="panel-in">
+							<div class="clases-in">
+							  <a href="https://replit.com/@KingPacaya/Full-page-background-image#index.html" target="_blank">Full page background image</a>
+							  <a href="https://www.w3schools.com/howto/tryhow_css_halfpage_demo.htm" target="_blank">Half page background image</a>
+							</div>
+						</div>
+
+				  <a href="https://replit.com/@KingPacaya/Form-on-Image#index.html" target="_blank">Form on Image</a>
+				  <a href="https://replit.com/@KingPacaya/Hero-Image#index.html" target="_blank">Hero Image</a>
+				  <a href="https://replit.com/@KingPacaya/Change-Background-on-Scroll#index.html" target="_blank">Change Background on Scroll</a>
+				  <a href="https://replit.com/@KingPacaya/Avatar-Images#index.html" target="_blank">Avatar Images</a>
+				  <a href="https://replit.com/@KingPacaya/Responsive-Images#index.html" target="_blank">Responsive Images</a>
+				  <a href="https://replit.com/@KingPacaya/Center-Images#index.html" target="_blank">Center Images</a>
+				  <a href="https://replit.com/@KingPacaya/Thumbnail#index.html" target="_blank">Thumbnail</a>
+				  <a href="https://replit.com/@KingPacaya/Add-a-Border-to-an-Image#index.html" target="_blank">Add a Border to an Image</a>
+				  <a href="https://replit.com/@KingPacaya/Meet-The-Team-Page#index.html" target="_blank">"Meet The Team" Page</a>
+				  <a href="https://replit.com/@KingPacaya/Sticky-Image#index.html" target="_blank">Sticky Image</a>
+				  <a href="https://replit.com/@KingPacaya/Shake-an-Image#index.html" target="_blank">Shake an Image</a>
+				  <a href="https://replit.com/@KingPacaya/Portfolio-Gallery#index.html" target="_blank">Portfolio Gallery</a>
+				  <a href="https://replit.com/@KingPacaya/Portfolio-Gallery-with-Filtering#index.html" target="_blank">Portfolio Gallery with Filtering</a>
+				  <a href="https://replit.com/@KingPacaya/Image-Zoom#index.html" target="_blank">Image Zoom</a>
+				  <a href="https://replit.com/@KingPacaya/Image-Magnifier-Glass#index.html" target="_blank">Image Magnifier Glass</a>
+				  <a href="https://replit.com/@KingPacaya/Image-Comparison-Slider#index.html" target="_blank">Image Comparison Slider</a>
+				</div>
+			</div>
+	<!---Buttons--->
+		<button id="Buttons" class="acordion"><u>Buttons</u></button>
+			<div class="panel">
+				<div class="clases">
+				  <a href="https://replit.com/@KingPacaya/Alert-Buttons#index.html" target="_blank">Alert Buttons</a>
+				  <a href="https://replit.com/@KingPacaya/Outline-Buttons#index.html" target="_blank">Outline Buttons</a>
+				  <a href="https://replit.com/@KingPacaya/Split-Buttons#index.html" target="_blank">Split Buttons</a>
+
+				<button class="acordion-in">Animate Buttons</button>
+					<div class="panel-in">
+						<div class="clases-in">
+						  <a href="https://replit.com/@KingPacaya/Pressed-Effect#index.html" target="_blank">Pressed Effect</a>
+						  <a href="https://replit.com/@KingPacaya/Animated-Button#index.html" target="_blank">Animated Button</a>
+						  <a href="https://replit.com/@KingPacaya/Ripple-Effect#index.html" target="_blank">Ripple Effect</a>
+						</div>
+					</div>
+
+				<button class="acordion-in">Fading Buttons</button>
+					<div class="panel-in">
+						<div class="clases-in">
+						  <a href="https://replit.com/@KingPacaya/Fade-in-Effect#index.html" target="_blank">Fade in Effect</a>
+						  <a href="https://replit.com/@KingPacaya/Fade-out-Effect#index.html" target="_blank">Fade out Effect</a>
+						  <a href="https://replit.com/@KingPacaya/Fade-in-Effect-2#index.html" target="_blank">Fade in Effect 2</a>
+						</div>
+					</div>
+
+				<!---
+				<button class="acordion-in">Name</button>
+					<div class="panel-in">
+						<div class="clases-in">
+						  <a href="#" target="_blank">Name</a>
+						</div>
+					</div>
+				--->
+
+				  <a href="https://replit.com/@KingPacaya/Social-Media-Buttons#index.html" target="_blank">Social Media Buttons</a>
+				  <a href="https://replit.com/@KingPacaya/Read-More-Read-Less-Button#index.html" target="_blank">Read More Read Less Button</a>
+				  <a href="https://replit.com/@KingPacaya/Loading-Buttons#index.html" target="_blank">Loading Buttons</a>
+				  <a href="https://replit.com/@KingPacaya/Download-Button#index.html" target="_blank">Download Button</a>
+				  <a href="https://replit.com/@KingPacaya/Pill-Buttons#index.html" target="_blank">Pill Buttons</a>
+				  <a href="https://replit.com/@KingPacaya/Notification-Button#index.html" target="_blank">Notification Buttons</a>
+				  <a href="https://replit.com/@KingPacaya/Icon-Buttons#index.html" target="_blank">Icon Buttons</a>
+				  <a href="https://replit.com/@KingPacaya/Next-and-Previous-Buttons#index.html" target="_blank">Next and Previous Buttons</a>
+				  <a href="https://replit.com/@KingPacaya/More-Button-in-Navbar#index.html" target="_blank">More Button in Navbar</a>
+				  <a href="https://replit.com/@KingPacaya/Full-Width-Block-Buttons#index.html" target="_blank">Full Width (Block) Buttons</a>
+				  <a href="https://replit.com/@KingPacaya/Text-Buttons#index.html" target="_blank">Text Buttons</a>
+				  <a href="https://replit.com/@KingPacaya/Round-Buttons#index.html" target="_blank">Round Buttons</a>
+				  <a href="https://replit.com/@KingPacaya/Scroll-Back-To-Top-Button#index.html" target="_blank">Scroll Back To Top Button</a>
+				</div>
+			</div>
+	<!---Forms--->
+		<button id="Forms" class="acordion"><u>Forms</u></button>
+			<div class="panel">
+				<div class="clases">
+				  <a href="https://replit.com/@KingPacaya/Login-Form#index.html" target="_blank">Login Form</a>
+				  <a href="https://replit.com/@KingPacaya/Sign-Up-Form#index.html" target="_blank">Sign Up Form</a>
+				  <a href="https://replit.com/@KingPacaya/Checkout-Form#index.html" target="_blank">Checkout Form</a>
+				  <a href="https://replit.com/@KingPacaya/Contact-Form#index.html" target="_blank">Contact Form</a>
+				  <a href="https://replit.com/@KingPacaya/Social-Login-Form#index.html" target="_blank">Social Login Form</a>
+				  <a href="https://replit.com/@KingPacaya/Register-Form#index.html" target="_blank">Register Form</a>
+				  <a href="https://replit.com/@KingPacaya/Form-with-Icons#index.html" target="_blank">Form with Icons</a>
+				  <a href="https://replit.com/@KingPacaya/Email-Newsletter#index.html" target="_blank">Email Newsletter</a>
+				  <a href="https://replit.com/@KingPacaya/Stacked-Form#index.html" target="_blank">Stacked Form</a>
+				  <a href="https://replit.com/@KingPacaya/Responsive-Form#index.html" target="_blank">Responsive Form</a>
+				  <a href="https://replit.com/@KingPacaya/Popup-Form#index.html" target="_blank">Popup Form</a>
+				  <a href="https://replit.com/@KingPacaya/Inline-Form#index.html" target="_blank">Inline Form</a>
+				  <a href="https://replit.com/@KingPacaya/Clear-Input-Field#index.html" target="_blank">Clear Input Field</a>
+				  <a href="https://replit.com/@KingPacaya/Copy-Text-to-Clipboard#index.html" target="_blank">Copy Text to Clipboard</a>
+				  <a href="https://replit.com/@KingPacaya/Animated-Search-Form#index.html" target="_blank">Animated Search Form</a>
+				  <a href="https://replit.com/@KingPacaya/Search-Button#index.html" target="_blank">Search Button</a>
+				  <a href="https://replit.com/@KingPacaya/Fullscreen-Search#index.html" target="_blank">Fullscreen Search</a>
+				  <a href="https://replit.com/@KingPacaya/Input-Field-in-a-Menu#index.html" target="_blank">Input Field in a Menu</a>
+				  <a href="https://replit.com/@KingPacaya/Login-Form-in-a-Menu#index.html" target="_blank">Login Form in a Menu</a>
+				  <a href="https://replit.com/@KingPacaya/Custom-Checkbox#index.html" target="_blank">Custom Checkbox</a>
+				  <a href="https://replit.com/@KingPacaya/Custom-Select-Box#index.html" target="_blank">Custom Select Box</a>
+				  <a href="https://replit.com/@KingPacaya/Toggle-Switch#index.html" target="_blank">Toggle Switch</a>
+				  <a href="https://replit.com/@KingPacaya/Password-Validation#index.html" target="_blank">Password Validation</a>
+				  <a href="https://replit.com/@KingPacaya/Toggle-Password-Visibility#index.html" target="_blank">Toggle Password Visibility</a>
+				  <a href="https://replit.com/@KingPacaya/Form-with-Multiple-Steps#index.html" target="_blank">Form with Multiple Steps</a>
+				  <a href="https://replit.com/@KingPacaya/TenseVapidRuntimeenvironment#index.html" target="_blank">Autocomplete</a>
+				  <a href="https://replit.com/@KingPacaya/File-Upload-Button#index.html" target="_blank">File Upload Button</a>
+				  <a href="https://replit.com/@KingPacaya/JS-Validation-For-Empty-Fields#index.html" target="_blank">JS Validation For Empty Fields</a>
+				</div>
+			</div>
+	<!---Filtrers--->
+		<button id="Filtrers" class="acordion"><u>Filtrers</u></button>
+			<div class="panel">
+				<div class="clases">
+				  <a href="https://replit.com/@KingPacaya/Filtrer-List#index.html" target="_blank">Filtrer List</a>
+				  <a href="https://replit.com/@KingPacaya/Filtrer-Table#index.html" target="_blank">Filtrer Table</a>
+				  <a href="https://replit.com/@KingPacaya/Filtrer-Elements#index.html" target="_blank">Filtrer Elements</a>
+				  <a href="https://replit.com/@KingPacaya/Filtrer-Dropdown#index.html" target="_blank">Filtrer Dropdown</a>
+				  <a href="https://replit.com/@KingPacaya/Sort-List#index.html" target="_blank">Sort List</a>
+				  <a href="https://replit.com/@KingPacaya/Sort-Table#index.html" target="_blank">Sort Table</a>
+				</div>
+			</div>
+	<!---Tables--->
+		<button id="Tables" class="acordion"><u>Tables</u></button>
+			<div class="panel">
+				<div class="clases">
+				  <a href="https://replit.com/@KingPacaya/Zebra-Striped-Table#index.html" target="_blank">Zebra Striped Table</a>
+				  <a href="https://replit.com/@KingPacaya/Full-width-Table#index.html" target="_blank">Full-width Table</a>
+				  <a href="https://replit.com/@KingPacaya/Side-by-side-Tables#index.html" target="_blank">Side-by-side Tables</a>
+				  <a href="https://replit.com/@KingPacaya/Responsive-Tables#index.html" target="_blank">Responsive Tables</a>
+				  <a href="https://replit.com/@KingPacaya/Comparison-Table#index.html" target="_blank">Comparison Table</a>
+				</div>
+			</div>
+	<!---More...--->
+		<button id="More..." class="acordion">More...</button>
+			<div class="panel">
+				<div class="clases">
+				  <a href="#" target="_blank">Name</a>
+				</div>
+			</div>
+	<!---Website--->
+		<button id="Website" class="acordion"><u>Website</u></button>
+			<div class="panel">
+				<div class="clases">
+				  <a href="https://replit.com/@KingPacaya/Make-a-Website#index.html" target="_blank">Make a Website</a>
+				  <a href="https://replit.com/@KingPacaya/Build-a-Website#index.html" target="_blank">Build a Website</a>
+				  <a href="https://replit.com/@KingPacaya/Make-a-Website-with-Bootstrap#index.html" target="_blank">Make a Website with Bootstrap 3</a>
+				  <a href="https://replit.com/@KingPacaya/Make-a-Website-with-Bootstrap-4#index.html" target="_blank">Make a Website with Bootstrap 4</a>
+				  <a href="https://replit.com/@KingPacaya/Contact-Section#index.html" target="_blank">Contact Section</a>
+				  <a href="https://replit.com/@KingPacaya/About-Page#index.html" target="_blank">About Page</a>
+				  <a href="https://replit.com/@KingPacaya/Example-Website#index.html" target="_blank">Example Website</a>
+				</div>
+			</div>
+	<!---Grid--->
+		<button id="Grid" class="acordion"><u>Grid</u></button>
+			<div class="panel">
+				<div class="clases">
+				  <a href="https://replit.com/@KingPacaya/4-Column-Layout#index.html" target="_blank">4 Column Layout</a>
+				  <a href="https://replit.com/@KingPacaya/Expanding-Grid#index.html" target="_blank">Expanding Grid</a>
+				  <a href="https://replit.com/@KingPacaya/List-Grid-View#index.html" target="_blank">List Grid View</a>
+				  <a href="https://replit.com/@KingPacaya/Column-Cards#index.html" target="_blank">Column Cards</a>
+				  <a href="https://replit.com/@KingPacaya/Responsive-Zig-Zag-Layout#index.html" target="_blank">Responsive Zig Zag Layout</a>
+				  <a href="https://replit.com/@KingPacaya/Blog-Layout#index.html" target="_blank">Blog Layout</a>
+				</div>
+			</div>
+	<!---Converters--->
+		<button id="Converters" class="acordion"><u>Converters</u></button>
+			<div class="panel">
+				<div class="clases">
+				  <a href="https://replit.com/@KingPacaya/Weight#index.html" target="_blank" >Converter Weight</a>
+				  <a href="https://replit.com/@KingPacaya/Converter-Temperature#index.html" target="_blank">Converter Temperature</a>
+				  <a href="https://replit.com/@KingPacaya/Converter-Lenght#index.html" target="_blank">Converter Lenght</a>
+				  <a href="https://replit.com/@KingPacaya/Converter-Speed#index.html" target="_blank">Converter Speed</a>
+				</div>
+			</div>
+
+
+	<script>
+	var acc = document.getElementsByClassName("acordion");
+	var i;
+
+	for (i = 0; i < acc.length; i++) {
+	  acc[i].addEventListener("click", function() {
+	    this.classList.toggle("active");
+	    var panel = this.nextElementSibling;
+	    if (panel.style.display === "block") {
+	      panel.style.display = "none";
+	    } else {
+	      panel.style.display = "block";
+	    }
+	  });
+	}
+
+	var acc = document.getElementsByClassName("acordion-in");
+	var i;
+
+	for (i = 0; i < acc.length; i++) {
+	  acc[i].addEventListener("click", function() {
+	    this.classList.toggle("active");
+	    var panel = this.nextElementSibling;
+	    if (panel.style.display === "block") {
+	      panel.style.display = "none";
+	    } else {
+	      panel.style.display = "block";
+	    }
+	  });
+	}
+	</script>
+
+</body>
+</html>
